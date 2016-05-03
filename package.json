@@ -9,7 +9,7 @@
     "build:babel": "babel src --out-dir dist",
     "build:assets": "cp -a src/ionic-scss src/styles src/fonts dist/scss/.",
     "build": "npm run build:assets && npm run build:babel",
-    "postinstall": "npm run build"
+    "postinstall": "npm install --dev && npm run build"
   },
   "repository": {
     "type": "git",
